@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SmartFlux</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+  </head>
+
+  <body>
+    <div class="home" id="particles-js">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Metro</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Metrobus</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <img src="./images/logo.jpeg" class="logoSmartFlux">
+    </div>
+
+    <div id="map">
+      <iframe
+        id="map-iframe"
+        width = "80%"
+        height = "95%"
+        frameborder = "0" style = "border: 0"
+        src = "https://www.google.com/maps/embed/v1/directions?key=AIzaSyBl-WbEBz2z8ziWvGCN4PmXXJVYU_D3MCs&origin=WeWork+Artz+Pedregal*CDMX+Anillo+Periferico&destination=Fes+Zaragoza+UNAM&avoid=tolls|highways" allowfullscreen >
+      </iframe>
+    </div>
+
+  <script src="./js/particles.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl-WbEBz2z8ziWvGCN4PmXXJVYU_D3MCs&callback=initMap"
+      async defer></script>
+
+  <script type="text/javascript">
+    let url = src = "https://www.google.com/maps/embed/v1/directions?key=AIzaSyBl-WbEBz2z8ziWvGCN4PmXXJVYU_D3MCs&"
+    const inputOrigen =
+    let origin = '&origin=' + inputOrigen;
+    let destination = '&destination=Fes+Aragon'
+    url = url + origin + destination
+
+    const iframe = document.querySelector('#map-iframe');
+    iframe.setAttribute('src', url);s
+  </script>
+  </body>
+</html>
